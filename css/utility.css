@@ -1,0 +1,174 @@
+.text-primery {
+  color: #28a745;
+}
+
+.text-secondery {
+  color: #0284d0;
+}
+
+.btn-primery,
+.bg-primery {
+  background-color: #28a745;
+  color: white;
+}
+
+.btn-secondery,
+.bg-secondery {
+  background-color: #0284d0;
+  color: white;
+}
+
+.btn-dark,
+.bg-dark {
+  background-color: #333;
+  color: white;
+}
+
+.btn-light,
+.bg-light {
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+.btn {
+  cursor: pointer;
+  display: inline-block;
+  padding: 10px 30px;
+  color: #fff;
+  background-color: #28a745;
+  border: none;
+  border-radius: 5px;
+}
+
+.btn-outline {
+  border: 1px solid #fff;
+  background: transparent;
+}
+
+/* flex items */
+
+.flex-items {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100%;
+}
+
+.flex-items > div {
+  padding: 20px;
+}
+
+/* flex-cloumns */
+
+.flex-cloumns {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.flex-cloumns .cloumn {
+  display: flex;
+  flex-direction: row;
+  flex-basis: 100%;
+  flex: 1;
+}
+
+.flex-cloumns .cloumn .cloumn-1,
+.cloumn-2 {
+  height: 100%;
+}
+
+.flex-cloumns img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.flex-cloumns .cloumn-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 30px;
+}
+
+.flex-cloumns h2 {
+  font-size: 40px;
+  font-weight: 100;
+}
+
+.flex-cloumns h4 {
+  margin-bottom: 10px;
+}
+
+.flex-cloumns p {
+  margin: 20px 10px;
+}
+
+/* section-header */
+
+.section-header {
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+.section-header h4 {
+  font-size: 40px;
+  margin: 20px 0;
+  transition: all 0.5s ease-in-out;
+}
+
+.section-header h4:hover {
+  color: #28a745;
+  letter-spacing: 5px;
+  cursor: pointer;
+}
+
+.section-padding .section-header {
+  padding: 20px 20px 40px;
+}
+
+.flex-grid .row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+.flex-grid .column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.cloumn {
+  flex-direction: row-reverse;
+}
+/* flex-items team */
+
+.flex-items img {
+  border-radius: 50%;
+}
+
+@media (max-width: 880px) {
+  .flex-items {
+    flex-direction: column;
+  }
+  .flex-items p {
+    text-align: center;
+  }
+  .flex-cloumns .cloumn,
+  .flex-grid .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+  .team img {
+    width: 70%;
+  }
+}
